@@ -12,7 +12,7 @@
         <ul>
             <li>
                 Created a full-stack web app that generates completely novel,
-                high- quality text based on a user provided prompt
+                high-quality text based on a user provided prompt
             </li>
             <li>Powered by GPT-3 using the OpenAI API</li>
             <li>
@@ -25,7 +25,7 @@
             <li>
                 Learned the CSS Flexbox layout model, JavaScript Fetch API, how
                 to handle JSON data, and the process of programming in a
-                component- based JavaScript framework
+                component-based JavaScript framework
             </li>
         </ul>
     </div>

@@ -11,7 +11,7 @@
         <h2>Programming Languages</h2>
         <p>Javascript/Typescript, HTML/CSS, Java, Python, C/C++, SQL</p>
         <h2>JavaScript Frameworks</h2>
-        <p>React, Svelte</p>
+        <p>React, Next.js, Svelte</p>
     </div>
     <div class="bio-container">
         <h2>Software</h2>
