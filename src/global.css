@@ -1,0 +1,13 @@
+@import url(./lib/fonts/satoshi.css);
+
+* {
+    font-family: 'Satoshi-Bold';
+}
+
+@media (prefers-reduced-motion) {
+	::view-transition-group(*),
+	::view-transition-old(*),
+	::view-transition-new(*) {
+		animation: none !important;
+	}
+}
