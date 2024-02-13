@@ -1,0 +1,23 @@
+/**
+ * @license
+ *
+ * Font Family: Satoshi
+ * Designed by: Deni Anggara
+ * URL: https://www.fontshare.com/fonts/satoshi
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Satoshi Variable(Variable font)
+ * Satoshi Variable Italic(Variable font)
+ * Satoshi Light
+ * Satoshi Light Italic
+ * Satoshi Regular
+ * Satoshi Italic
+ * Satoshi Medium
+ * Satoshi Medium Italic
+ * Satoshi Bold
+ * Satoshi Bold Italic
+ * Satoshi Black
+ * Satoshi Black Italic
+ *
+*/@font-face{font-family:Satoshi-Variable;src:url(./Satoshi-Variable.hYPs9p3n.woff2) format("woff2"),url(./Satoshi-Variable.eXFZmEKH.woff) format("woff"),url(./Satoshi-Variable.oQF26RWl.ttf) format("truetype");font-weight:300 900;font-display:swap;font-style:normal}@font-face{font-family:Satoshi-VariableItalic;src:url(./Satoshi-VariableItalic.48BbKca6.woff2) format("woff2"),url(./Satoshi-VariableItalic.3oq8yHAB.woff) format("woff"),url(./Satoshi-VariableItalic.W-7HRBbx.ttf) format("truetype");font-weight:300 900;font-display:swap;font-style:italic}@font-face{font-family:Satoshi-Light;src:url(./Satoshi-Light.CKsCf2Y0.woff2) format("woff2"),url(./Satoshi-Light.v3ZpCl8y.woff) format("woff"),url(./Satoshi-Light.fNpM21Pn.ttf) format("truetype");font-weight:300;font-display:swap;font-style:normal}@font-face{font-family:Satoshi-LightItalic;src:url(./Satoshi-LightItalic.vYrlOL--.woff2) format("woff2"),url(./Satoshi-LightItalic.fS-rPe05.woff) format("woff"),url(./Satoshi-LightItalic.QIbsWPgA.ttf) format("truetype");font-weight:300;font-display:swap;font-style:italic}@font-face{font-family:Satoshi-Regular;src:url(./Satoshi-Regular.jzPXXLeF.woff2) format("woff2"),url(./Satoshi-Regular.lkshIxr8.woff) format("woff"),url(./Satoshi-Regular.06BV6INj.ttf) format("truetype");font-weight:400;font-display:swap;font-style:normal}@font-face{font-family:Satoshi-Italic;src:url(./Satoshi-Italic.MFZhBHOj.woff2) format("woff2"),url(./Satoshi-Italic.Twl0cc8q.woff) format("woff"),url(./Satoshi-Italic.BTMZAg_K.ttf) format("truetype");font-weight:400;font-display:swap;font-style:italic}@font-face{font-family:Satoshi-Medium;src:url(./Satoshi-Medium.cj_mW_vX.woff2) format("woff2"),url(./Satoshi-Medium.w8Az3gYK.woff) format("woff"),url(./Satoshi-Medium.zrfZDPmu.ttf) format("truetype");font-weight:500;font-display:swap;font-style:normal}@font-face{font-family:Satoshi-MediumItalic;src:url(./Satoshi-MediumItalic.cUfiHEYx.woff2) format("woff2"),url(./Satoshi-MediumItalic.T0yVKccw.woff) format("woff"),url(./Satoshi-MediumItalic.VBVWKA9v.ttf) format("truetype");font-weight:500;font-display:swap;font-style:italic}@font-face{font-family:Satoshi-Bold;src:url(./Satoshi-Bold.XeZCkP1H.woff2) format("woff2"),url(./Satoshi-Bold.tj4S1hXG.woff) format("woff"),url(./Satoshi-Bold.j5cvZB-W.ttf) format("truetype");font-weight:700;font-display:swap;font-style:normal}@font-face{font-family:Satoshi-BoldItalic;src:url(./Satoshi-BoldItalic.gI7wHMUV.woff2) format("woff2"),url(./Satoshi-BoldItalic.0OwdD3y2.woff) format("woff"),url(./Satoshi-BoldItalic.LQpUHAG_.ttf) format("truetype");font-weight:700;font-display:swap;font-style:italic}@font-face{font-family:Satoshi-Black;src:url(./Satoshi-Black.450Lrkc_.woff2) format("woff2"),url(./Satoshi-Black.94c0-1Jh.woff) format("woff"),url(./Satoshi-Black.osx8kam5.ttf) format("truetype");font-weight:900;font-display:swap;font-style:normal}@font-face{font-family:Satoshi-BlackItalic;src:url(./Satoshi-BlackItalic.oQm0w9uw.woff2) format("woff2"),url(./Satoshi-BlackItalic._AIv0twt.woff) format("woff"),url(./Satoshi-BlackItalic.ryKTqEoS.ttf) format("truetype");font-weight:900;font-display:swap;font-style:italic}*{font-family:Satoshi-Bold}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}}html,body{margin:0;height:100%;overflow:hidden}:root{--text-color:#000}
