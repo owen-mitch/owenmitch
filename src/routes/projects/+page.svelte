@@ -8,6 +8,18 @@
     <HeaderAnimation />
     <h1>Projects</h1>
     <div class="bio-container">
+        <h2>Personal Website • February 2024</h2>
+        <ul>
+            <li>Written in the Svelte framework using SvelteKit</li>
+            <li>Hosted on custom domain with Github Pages</li>
+            <li>
+                Automated recompilation and site redeployment when updates are
+                pushed to Github
+            </li>
+            <li>Learned the process of graphic design and CSS keyframing</li>
+        </ul>
+    </div>
+    <div class="bio-container">
         <h2>AI Writing Tool • March 2022</h2>
         <ul>
             <li>
@@ -59,7 +71,6 @@
     </div>
     <div class="additional-footer-helper"></div>
     <ButtonTray />
-    
 </div>
 <Footer />
 
