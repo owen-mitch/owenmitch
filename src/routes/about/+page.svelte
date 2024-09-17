@@ -17,7 +17,7 @@
         </p>
         <h2>About me</h2>
         <p>
-            I am a junior Computer Science major at Saint Joseph's University. I
+            I am a senior Computer Science major at Saint Joseph's University. I
             am also a software engineer/undergraduate researcher at my school in
             the Haub Innovation Center.
         </p>
