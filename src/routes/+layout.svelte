@@ -14,6 +14,9 @@
     });
 </script>
 
+<svelte:head>
+    <title>Owen Mitchell</title>
+</svelte:head>
 <slot />
 
 <style>
