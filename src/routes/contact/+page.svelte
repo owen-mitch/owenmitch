@@ -2,15 +2,16 @@
     import Footer from "../Footer.svelte";
     import ButtonTray from "../ButtonTray.svelte";
     import HeaderAnimation from "../HeaderAnimation.svelte";
+    import Header from "../Header.svelte";
 
     function copyToClipboard() {
-        navigator.clipboard.writeText("mail@owenmit.ch")
+        navigator.clipboard.writeText("mail@owenmit.ch");
     }
 </script>
 
 <div class="container">
     <HeaderAnimation />
-    <h1>Contact</h1>
+    <Header title="Contact" />
     <div class="bio-container">
         <p>
             To get in contact with me, please send me an email:
@@ -43,7 +44,7 @@
         border: 2px solid black;
         border-radius: 10px;
         padding: 1em 2em;
-        margin: 4em;
+        margin: 2em 4em 4em 4em;
     }
 
     .email {
@@ -54,10 +55,6 @@
 
     .copyButton {
         width: auto;
-    }
-
-    h1 {
-        padding: 0 1em;
     }
 
     h2 {

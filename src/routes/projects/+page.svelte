@@ -2,11 +2,12 @@
     import Footer from "../Footer.svelte";
     import ButtonTray from "../ButtonTray.svelte";
     import HeaderAnimation from "../HeaderAnimation.svelte";
+    import Header from "../Header.svelte";
 </script>
 
 <div class="container">
     <HeaderAnimation />
-    <h1>Projects</h1>
+    <Header title="Projects" />
     <div class="bio-container">
         <h2>Personal Website • February 2024</h2>
         <ul>
@@ -88,15 +89,11 @@
         border: 2px solid black;
         border-radius: 10px;
         padding: 1em 2em;
-        margin: 2em 4em;
+        margin: 2em 4em 4em 4em;
     }
 
     .additional-footer-helper {
         width: 100%;
         height: 2em;
-    }
-
-    h1 {
-        padding: 0 1em 1em;
     }
 </style>

@@ -45,17 +45,17 @@
   .blue-square {
     position: absolute;
     right: 0;
-    width: 5em; /* Adjusted width */
-    height: 5em; /* Adjusted height */
+    width: 5em;
+    height: 5em;
     background-color: #0a1e8d;
-    animation: moveSquare 5s forwards; /* Added 'forwards' */
+    animation: moveSquare 5s forwards;
     z-index: 1;
   }
 
   .header {
     position: relative;
     z-index: 2;
-    color: #43b4d8; /* Set initial text color to white */
+    color: #43b4d8;
     padding: 0 1em;
   }
 
@@ -63,49 +63,47 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: calc(
-      100% - 5em
-    ); /* Adjusted width to reach up to the left side of the blue square */
-    height: 5em; /* Set height */
-    background-color: white; /* Set background color to white */
+    width: calc(100% - 5em);
+    height: 5em;
+    background-color: white;
     z-index: 3;
-    animation: moveRectangle 5s forwards; /* Added animation for moving the rectangle */
+    animation: moveRectangle 5s forwards;
   }
 
   .square-blocker-left {
     position: absolute;
-    top: 5em; /* 5em down from the top */
+    top: 5em;
     left: 0;
     width: 5em;
     height: 5em;
     background-color: white;
     z-index: 3;
     animation: moveSquareDown 5s forwards;
-    animation-delay: 1.25s; /* Adjusted animation delay */
+    animation-delay: 1.25s;
   }
 
   .subheader-blocker {
     position: absolute;
-    top: 5em; /* 5em down from the top */
-    left: 5em; /* 5em across from the left */
-    width: calc(100% - 5em); /* Adjusted width */
-    height: 5em; /* Set height */
-    background-color: white; /* Set background color to white */
+    top: 5em;
+    left: 5em;
+    width: calc(100% - 5em);
+    height: 5em;
+    background-color: white;
     z-index: 3;
-    animation: moveSecondRectangle 5s forwards; /* Added animation for moving the rectangle */
-    animation-delay: 2.5s; /* Adjusted animation delay */
+    animation: moveSecondRectangle 5s forwards;
+    animation-delay: 2.5s;
   }
 
   .main-blocker {
     position: absolute;
-    top: 10em; /* 5em down from the top */
-    left: 0; /* 5em across from the left */
-    width: 100%; /* Adjusted width */
-    height: calc(100% - 10em); /* Set height */
-    background-color: white; /* Set background color to white */
+    top: 10em;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 10em);
+    background-color: white;
     z-index: 3;
-    animation: moveMainBlocker 5s forwards; /* Added animation for moving the rectangle */
-    animation-delay: 3.75s; /* Adjusted animation delay */
+    animation: moveMainBlocker 5s forwards;
+    animation-delay: 3.75s;
   }
 
   @keyframes moveSquare {
@@ -113,22 +111,22 @@
       transform: translateX(0) translateY(0);
     }
     25% {
-      transform: translateX(calc(-100vw + 5em)) translateY(0); /* Adjusted translation */
-      width: calc(100% - 5em); /* Adjusted width to fill remaining space */
+      transform: translateX(calc(-100vw + 5em)) translateY(0);
+      width: calc(100% - 5em);
     }
     50% {
-      transform: translateX(calc(-100vw + 5em)) translateY(5em); /* Adjusted translation */
-      width: calc(100% - 5em); /* Adjusted width to fill remaining space */
+      transform: translateX(calc(-100vw + 5em)) translateY(5em);
+      width: calc(100% - 5em);
     }
     75% {
-      transform: translateX(0) translateY(5em); /* Adjusted translation */
-      width: 100%; /* Set width to full width of the container */
-      height: 5em; /* Maintain height */
+      transform: translateX(0) translateY(5em);
+      width: 100%;
+      height: 5em;
     }
     100% {
       transform: translateX(0) translateY(0);
-      width: 100%; /* Set width to full width of the container */
-      height: 100%; /* Set height to full height of the container */
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -137,11 +135,11 @@
       transform: translateX(0);
     }
     25% {
-      transform: translateX(calc(-100vw + 5em)); /* Adjusted translation */
+      transform: translateX(calc(-100vw + 5em));
       opacity: 1;
     }
     100% {
-      transform: translateX(calc(-100vw + 5em)); /* Adjusted translation */
+      transform: translateX(calc(-100vw + 5em));
       opacity: 0;
     }
   }
@@ -167,10 +165,10 @@
       transform: translateX(0);
     }
     25% {
-      transform: translateX(calc(100vw - 5em)); /* Adjusted translation */
+      transform: translateX(calc(100vw - 5em));
     }
     100% {
-      transform: translateX(calc(100vw - 5em)); /* Adjusted translation */
+      transform: translateX(calc(100vw - 5em));
       opacity: 0;
     }
   }
@@ -180,11 +178,11 @@
       transform: translateX(0);
     }
     25% {
-      transform: translateY(calc(100vh - 10em)); /* Adjusted translation */
+      transform: translateY(calc(100vh - 10em));
       opacity: 1;
     }
     100% {
-      transform: translateY(calc(100vh - 10em)); /* Adjusted translation */
+      transform: translateY(calc(100vh - 10em));
       opacity: 0;
     }
   }

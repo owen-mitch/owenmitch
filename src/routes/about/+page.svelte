@@ -2,11 +2,12 @@
     import Footer from "../Footer.svelte";
     import ButtonTray from "../ButtonTray.svelte";
     import HeaderAnimation from "../HeaderAnimation.svelte";
+    import Header from "../Header.svelte";
 </script>
 
 <div class="container">
     <HeaderAnimation />
-    <h1>About</h1>
+    <Header title="About" />
     <div class="bio-container">
         <h2>Welcome to owenmit.ch</h2>
         <p>
@@ -40,11 +41,7 @@
         border: 2px solid black;
         border-radius: 10px;
         padding: 1em 2em;
-        margin: 4em;
-    }
-
-    h1 {
-        padding: 0 1em;
+        margin: 2em 4em 4em 4em;
     }
 
     p {

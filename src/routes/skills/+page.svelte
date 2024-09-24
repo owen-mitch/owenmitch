@@ -2,11 +2,12 @@
     import Footer from "../Footer.svelte";
     import ButtonTray from "../ButtonTray.svelte";
     import HeaderAnimation from "../HeaderAnimation.svelte";
+    import Header from "../Header.svelte";
 </script>
 
 <div class="container">
     <HeaderAnimation />
-    <h1>Skills</h1>
+    <Header title="Skills" />
     <div class="bio-container">
         <h2>Programming Languages</h2>
         <p>Javascript/Typescript, HTML/CSS/Sass, Java, Python, C/C++, SQL</p>
@@ -44,16 +45,12 @@
         border: 2px solid black;
         border-radius: 10px;
         padding: 1em 2em;
-        margin: 2em 4em;
+        margin: 2em 4em 4em 4em;
     }
 
     .additional-footer-helper {
         width: 100%;
         height: 2em;
-    }
-
-    h1 {
-        padding: 0 1em 1em;
     }
 
     p {

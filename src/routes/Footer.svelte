@@ -8,9 +8,8 @@
             <img src="./github.svg" alt="Github"/>
         </a>
         <a href="mailto:mail@owenmit.ch">
-            <img src="./email.svg" alt=Email/>
+            <img src="./email.svg" alt="Email"/>
         </a>
-        
     </div>
 </footer>
 
@@ -19,16 +18,37 @@
         position: fixed;
         width: 100%;
         display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: space-between;
+        padding-bottom: 0.5em;
         bottom: 0;
         z-index: 1;
     }
+
     p {
         color: var(--text-color);
-        padding: 0 0 0 1em;
+        margin-bottom: 0.5em;
+        padding: 0 1em 0 1em;
     }
 
     .button-tray {
-        margin: 0 1em 0 0;
+        padding: 0 1em 0 1em;
     }
+
+    .button-tray a img {
+        width: 24px;
+        height: 24px;
+    }
+
+    @media (max-width: 600px) {
+        p {
+            font-size: 0.9rem;
+        }
+
+        a {
+            padding: 9px 12px;
+        }
+    }
+
 </style>
