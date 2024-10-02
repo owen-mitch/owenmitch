@@ -1,6 +1,7 @@
 <script>
     import "../global.css";
     import { onNavigate } from "$app/navigation";
+    import Analytics from "../lib/analytics.svelte";
 
     onNavigate((navigation) => {
         if (!document.startViewTransition) return;
@@ -17,6 +18,9 @@
 <svelte:head>
     <title>Owen Mitchell</title>
 </svelte:head>
+
+<Analytics />
+
 <slot />
 
 <style>
