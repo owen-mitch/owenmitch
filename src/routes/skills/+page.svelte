@@ -3,28 +3,123 @@
     import ButtonTray from "../ButtonTray.svelte";
     import HeaderAnimation from "../HeaderAnimation.svelte";
     import Header from "../Header.svelte";
+    import "../isometric.css";
 </script>
 
 <div class="container">
     <HeaderAnimation />
     <Header title="Skills" />
-    <div class="bio-container">
-        <h2>Programming Languages</h2>
-        <p>Javascript/Typescript, HTML/CSS/Sass, Java, Python, C/C++, SQL</p>
-        <h2>JavaScript Frameworks</h2>
-        <p>React, Next.js, Svelte</p>
-    </div>
-    <div class="bio-container">
-        <h2>Software</h2>
-        <p>AWS (S3, DynamoDB), Linux, Docker, Firebase, Tableau, Nginx, MySQL Workbench, MariaDB</p>
-    </div>
-    <div class="bio-container">
-        <h2>Soft Skills</h2>
-        <p>Communication, creativity, problem solving, strong work ethic</p>
-    </div>
-    <div class="bio-container">
-        <h2>Certifications</h2>
-        <p>LinkedIn React.js Skill Assessment</p>
+    <div class="skills-content">
+        <div class="skills-section isometric-container">
+            <div class="isometric-title">
+                <h2>Programming Languages</h2>
+            </div>
+
+            <div class="isometric-grid languages-grid">
+                <div class="language-card isometric-card">
+                    <img
+                        src="/logos/javascript.svg"
+                        alt="JavaScript"
+                        class="language-icon"
+                    />
+                    <h3 class="language-name">JavaScript</h3>
+                </div>
+
+                <div class="language-card isometric-card">
+                    <img
+                        src="/logos/typescript.svg"
+                        alt="TypeScript"
+                        class="language-icon"
+                    />
+                    <h3 class="language-name">TypeScript</h3>
+                </div>
+
+                <div class="language-card isometric-card">
+                    <img
+                        src="/logos/html.svg"
+                        alt="HTML"
+                        class="language-icon"
+                    />
+                    <h3 class="language-name">HTML</h3>
+                </div>
+
+                <div class="language-card isometric-card">
+                    <img src="/logos/css.svg" alt="CSS" class="language-icon" />
+                    <h3 class="language-name">CSS</h3>
+                </div>
+
+                <div class="language-card isometric-card">
+                    <img
+                        src="/logos/java.svg"
+                        alt="Java"
+                        class="language-icon"
+                    />
+                    <h3 class="language-name">Java</h3>
+                </div>
+
+                <div class="language-card isometric-card">
+                    <img
+                        src="/logos/python.svg"
+                        alt="Python"
+                        class="language-icon"
+                    />
+                    <h3 class="language-name">Python</h3>
+                </div>
+
+                <div class="language-card isometric-card">
+                    <img src="/logos/c.svg" alt="C/C++" class="language-icon" />
+                    <h3 class="language-name">C/C++</h3>
+                </div>
+
+                <div class="language-card isometric-card">
+                    <img src="/logos/sql.svg" alt="SQL" class="language-icon" />
+                    <h3 class="language-name">SQL</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="isometric-grid">
+            <div class="skills-card isometric-card">
+                <h3>JavaScript Frameworks</h3>
+                <ul>
+                    <li>React</li>
+                    <li>Next.js</li>
+                    <li>Svelte</li>
+                </ul>
+            </div>
+
+            <div class="skills-card isometric-card">
+                <h3>Software</h3>
+                <ul>
+                    <li>AWS (S3, DynamoDB)</li>
+                    <li>Linux</li>
+                    <li>Docker</li>
+                    <li>Firebase</li>
+                    <li>Tableau</li>
+                </ul>
+            </div>
+
+            <div class="skills-card isometric-card">
+                <h3>DevOps</h3>
+                <ul>
+                    <li>Nginx</li>
+                    <li>MySQL Workbench</li>
+                    <li>MariaDB</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="skills-section isometric-container">
+            <div class="isometric-title">
+                <h2>Certifications</h2>
+            </div>
+            <div class="certifications">
+                <div class="certification">
+                    <span class="cert-logo">in</span>
+                    <p>LinkedIn React.js Skill Assessment</p>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="additional-footer-helper"></div>
     <ButtonTray />
@@ -40,12 +135,14 @@
         overflow: scroll;
     }
 
-    .bio-container {
+    .skills-content {
+        padding: 0 2em;
+    }
+
+    .skills-section {
         background-color: white;
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 1em 2em;
-        margin: 2em 4em 4em 4em;
+        padding: 2em;
+        margin: 2em 0;
     }
 
     .additional-footer-helper {
@@ -53,7 +150,60 @@
         height: 2em;
     }
 
+    .skills-card {
+        padding: 1.5rem;
+    }
+
+    .skills-card h3 {
+        color: #0a1e8d;
+        margin-top: 0;
+        border-bottom: 2px solid #43b4d8;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .skills-card ul {
+        padding-left: 1.5rem;
+        margin: 0;
+    }
+
+    .skills-card li {
+        margin-bottom: 0.5rem;
+    }
+
+    /* Certifications */
+    .certifications {
+        margin-top: 1.5rem;
+    }
+
+    .certification {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border: 1px solid #eee;
+        border-radius: 4px;
+    }
+
+    .cert-logo {
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: #0077b5;
+        color: white;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        margin-right: 1rem;
+    }
+
+    .certification p {
+        margin: 0;
+    }
+
     p {
         font-size: medium;
+        line-height: 1.6;
     }
 </style>

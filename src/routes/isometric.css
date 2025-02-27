@@ -1,0 +1,170 @@
+/* Isometric Design System
+   Based on a minimalist pseudo-isometric style with a two-tone blue palette
+   #0a1e8d - Dark blue
+   #43b4d8 - Light blue
+*/
+
+.isometric-container {
+  position: relative;
+  background-color: white;
+  border: 2px solid black;
+  transform: translate(-6px, -6px);
+  box-shadow: 6px 6px 0 #0a1e8d;
+}
+
+.isometric-button {
+  outline: 0;
+  background-color: white;
+  color: #000;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 12px 16px;
+  text-decoration: none;
+  transition: all .14s ease-out;
+  white-space: nowrap;
+  transform: translate(-4px, -4px);
+  box-shadow: 4px 4px 0 #0a1e8d;
+}
+
+.isometric-button:hover {
+  transform: translate(-6px, -6px);
+  box-shadow: 6px 6px 0 #0a1e8d;
+}
+
+.isometric-title {
+  position: relative;
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #43b4d8;
+  border: 2px solid black;
+  transform: translate(-4px, -4px);
+  box-shadow: 4px 4px 0 #0a1e8d;
+  margin-bottom: 1.5em;
+}
+
+/* Programming Languages Grid */
+.languages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.language-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.language-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.language-name {
+  margin: 0;
+  color: #0a1e8d;
+  font-weight: 600;
+}
+
+
+/* Mobile optimization */
+@media (max-width: 900px) {
+  .languages-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .languages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .language-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .language-name {
+    font-size: 1rem;
+  }
+}
+
+/* Pseudo-3D animation for elements */
+@keyframes float {
+  0% {
+    transform: translate(-6px, -6px);
+    box-shadow: 6px 6px 0 #0a1e8d;
+  }
+  50% {
+    transform: translate(-8px, -8px);
+    box-shadow: 8px 8px 0 #0a1e8d;
+  }
+  100% {
+    transform: translate(-6px, -6px);
+    box-shadow: 6px 6px 0 #0a1e8d;
+  }
+}
+
+/* Isometric grid system */
+.isometric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.isometric-card {
+  position: relative;
+  padding: 1.5rem;
+  background-color: white;
+  border: 2px solid black;
+  transform: translate(-6px, -6px);
+  box-shadow: 6px 6px 0 #0a1e8d;
+}
+
+/* Email button with isometric effect */
+.isometric-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  border: 2px solid black;
+  margin: 2rem auto;
+  max-width: 400px;
+  transform: translate(-6px, -6px);
+  box-shadow: 6px 6px 0 #0a1e8d;
+}
+
+/* Copy button animation */
+@keyframes isometric-press {
+  0% {
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 0 #0a1e8d;
+  }
+  50% {
+    transform: translate(0px, 0px);
+    box-shadow: 0px 0px 0 #0a1e8d;
+  }
+  100% {
+    transform: translate(-4px, -4px);
+    box-shadow: 4px 4px 0 #0a1e8d;
+  }
+}
+
+.isometric-press {
+  animation: isometric-press 0.2s ease-out;
+}

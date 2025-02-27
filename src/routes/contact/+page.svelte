@@ -3,37 +3,47 @@
     import ButtonTray from "../ButtonTray.svelte";
     import HeaderAnimation from "../HeaderAnimation.svelte";
     import Header from "../Header.svelte";
+    import "../isometric.css";
+    import { fade } from 'svelte/transition';
 
     let isPressed = false;
+    let copySuccess = false;
 
     function copyToClipboard() {
         navigator.clipboard.writeText("mail@owenmit.ch");
 
         // Allows the copy button animation to fully play out
         isPressed = true;
+        copySuccess = true;
 
         setTimeout(() => {
             isPressed = false;
         }, 200);
+
+        setTimeout(() => {
+            copySuccess = false;
+        }, 2000);
     }
 </script>
 
 <div class="container">
     <HeaderAnimation />
     <Header title="Contact" />
-    <div class="bio-container">
-        <p>
-            To get in contact with me, please send me an email:
-        </p>
-        <div class="email">
-            <h2>mail@owenmit.ch</h2>
-            <!-- svelte-ignore a11y-missing-attribute -->
-            <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <!-- svelte-ignore a11y-no-static-element-interactions -->
-            <a class="copyButton" class:pressed={isPressed} on:click={copyToClipboard}>
-                <img src="./copy2.svg" alt="Copy to Clipboard" />
-            </a>
-        </div>
+    <div class="contact-content">
+            <div class="email-container isometric-email">
+                <div class="email-address">mail@owenmit.ch</div>
+                <!-- svelte-ignore a11y-missing-attribute -->
+                <!-- svelte-ignore a11y-click-events-have-key-events -->
+                <!-- svelte-ignore a11y-no-static-element-interactions -->
+                <a class="copy-button" class:isometric-press={isPressed} on:click={copyToClipboard}>
+                    <img src="./copy2.svg" alt="Copy to Clipboard" />
+                </a>
+                {#if copySuccess}
+                <div class="copy-success" transition:fade>
+                    Copied to clipboard!
+                </div>
+                {/if}
+            </div>
     </div>
     <ButtonTray />
     <Footer />
@@ -48,54 +58,64 @@
         overflow: scroll;
     }
 
-    .bio-container {
-        background-color: white;
-        border: 2px solid black;
-        border-radius: 10px;
-        padding: 1em 2em;
-        margin: 2em 4em 4em 4em;
-    }
-
-    .email {
+    .contact-content {
+        padding: 0 2em;
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 60vh;
     }
 
-@keyframes press {
-    0% {
-        transform: translate(-4px, -4px);
+    .email-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        position: relative;
+    }
+
+    .email-address {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #0a1e8d;
+    }
+
+    .copy-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-left: 1rem;
+        cursor: pointer;
+        position: relative;
+        background-color: #43B4D8;
+        color: #000;
+        border: 1px solid #000;
+        border-radius: 4px;
+        transition: all 0.14s ease-out;
+    }
+
+    .copy-button:hover {
         box-shadow: 4px 4px 0 #000;
-    }
-    50% {
-        transform: translate(0px, 0px);
-        box-shadow: 0px 0px 0 #000;
-    }
-    100% {
         transform: translate(-4px, -4px);
-        box-shadow: 4px 4px 0 #000;
-    }
-}
-
-    .copyButton {
-        width: auto;
     }
 
-    .copyButton.pressed {
-        animation: press 0.2s ease-out;
+    .copy-button img {
+        width: 20px;
+        height: 20px;
     }
-
-    h2 {
-        text-align: center;
-        padding: 0 0.5em 0 0;
-    }
-
-    p {
-        font-size: medium;
-        text-align: center;
-    }
-
-    a {
-        width: 15vw;
+    
+    .copy-success {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #0a1e8d;
+        color: #43B4D8;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        font-weight: 500;
     }
 </style>

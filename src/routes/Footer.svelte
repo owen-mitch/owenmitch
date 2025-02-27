@@ -1,5 +1,10 @@
-<footer>
-    <p>© 2024 Owen Mitchell</p>
+<script>
+    import { page } from '$app/stores';
+    import "./isometric.css";
+</script>
+
+<footer class:home-footer={$page.url.pathname === '/'}>
+    <p>© 2025 Owen Mitchell</p>
     <div class="button-tray">
         <a href="https://linkedin.com/in/owen-mitch">
             <img src="./linkedin.svg" alt="LinkedIn" />
@@ -21,34 +26,107 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 0.5em;
+        padding: 0.6em 1.5em;
         bottom: 0;
         z-index: 1;
+        box-sizing: border-box;
+        height: 3.2em;
+        background-color: #43b4d8;
+    }
+
+    .home-footer {
+        background-color: #0a1e8d;
     }
 
     p {
-        color: var(--text-color);
-        margin-bottom: 0.5em;
-        padding: 0 1em 0 1em;
+        color: black;
+        margin: 0;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    
+    .home-footer p {
+        color: #43b4d8;
     }
 
     .button-tray {
-        padding: 0 1em 0 1em;
+        display: flex;
+        gap: 1.2em;
+        margin-right: 6px;
+    }
+
+    .button-tray a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        padding: 4px;
     }
 
     .button-tray a img {
         width: 24px;
         height: 24px;
+        min-width: 24px;
+        min-height: 24px;
     }
 
     @media (max-width: 600px) {
-        p {
-            font-size: 0.9rem;
+        footer {
+            padding: 0.5em 1.2em;
+            height: 3em;
         }
-
-        a {
-            padding: 9px 12px;
+        
+        .button-tray {
+            gap: 1em;
+            margin-right: 5px;
+        }
+        
+        .button-tray a {
+            width: 28px;
+            height: 28px;
+            padding: 3px;
+        }
+        
+        p {
+            font-size: 0.85rem;
+            margin-right: 5px;
+        }
+        
+        .button-tray a img {
+            width: 22px;
+            height: 22px;
+            min-width: 22px;
+            min-height: 22px;
         }
     }
-
+    
+    @media (max-width: 360px) {
+        footer {
+            padding: 0.4em 0.8em;
+            height: 2.8em;
+        }
+        
+        .button-tray {
+            gap: 0.8em;
+        }
+        
+        .button-tray a {
+            width: 26px;
+            height: 26px;
+            padding: 3px;
+        }
+        
+        .button-tray a img {
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+            min-height: 20px;
+        }
+        
+        p {
+            font-size: 0.8rem;
+            max-width: 45%;
+        }
+    }
 </style>
