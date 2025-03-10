@@ -6,13 +6,13 @@
 <footer class:home-footer={$page.url.pathname === '/'}>
     <p>© 2025 Owen Mitchell</p>
     <div class="button-tray">
-        <a href="https://linkedin.com/in/owen-mitch">
+        <a href="https://linkedin.com/in/owen-mitch" target="_blank">
             <img src="./linkedin.svg" alt="LinkedIn" />
         </a>
-        <a href="https://github.com/owen-mitch">
+        <a href="https://github.com/owen-mitch" target="_blank">
             <img src="./github.svg" alt="Github"/>
         </a>
-        <a href="mailto:mail@owenmit.ch">
+        <a href="mailto:mail@owenmit.ch" target="_blank">
             <img src="./email.svg" alt="Email"/>
         </a>
     </div>

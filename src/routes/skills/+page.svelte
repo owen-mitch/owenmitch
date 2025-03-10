@@ -50,20 +50,20 @@
 
                 <div class="language-card isometric-card">
                     <img
-                        src="/logos/java.svg"
-                        alt="Java"
-                        class="language-icon"
-                    />
-                    <h3 class="language-name">Java</h3>
-                </div>
-
-                <div class="language-card isometric-card">
-                    <img
                         src="/logos/python.svg"
                         alt="Python"
                         class="language-icon"
                     />
                     <h3 class="language-name">Python</h3>
+                </div>
+
+                <div class="language-card isometric-card">
+                    <img
+                        src="/logos/java.svg"
+                        alt="Java"
+                        class="language-icon"
+                    />
+                    <h3 class="language-name">Java</h3>
                 </div>
 
                 <div class="language-card isometric-card">
@@ -114,7 +114,7 @@
                 <h2>Certifications</h2>
             </div>
             <div class="certifications">
-                <div class="certification">
+                <div class="certification isometric-card">
                     <span class="cert-logo">in</span>
                     <p>LinkedIn React.js Skill Assessment</p>
                 </div>
@@ -150,18 +150,6 @@
         height: 2em;
     }
 
-    .skills-card {
-        padding: 1.5rem;
-    }
-
-    .skills-card h3 {
-        color: #0a1e8d;
-        margin-top: 0;
-        border-bottom: 2px solid #43b4d8;
-        padding-bottom: 0.5rem;
-        margin-bottom: 1rem;
-    }
-
     .skills-card ul {
         padding-left: 1.5rem;
         margin: 0;
@@ -171,17 +159,9 @@
         margin-bottom: 0.5rem;
     }
 
-    /* Certifications */
-    .certifications {
-        margin-top: 1.5rem;
-    }
-
     .certification {
         display: flex;
         align-items: center;
-        padding: 1rem;
-        border: 1px solid #eee;
-        border-radius: 4px;
     }
 
     .cert-logo {

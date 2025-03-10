@@ -1,5 +1,5 @@
 /* Isometric Design System
-   Based on a minimalist pseudo-isometric style with a two-tone blue palette
+   Based on a neobrutalist pseudo-isometric style with a two-tone blue palette
    #0a1e8d - Dark blue
    #43b4d8 - Light blue
 */
@@ -78,6 +78,17 @@
   font-weight: 600;
 }
 
+.skills-card {
+  padding: 1.5rem;
+}
+
+.skills-card h3 {
+  color: #0a1e8d;
+  margin-top: 0;
+  border-bottom: 2px solid #43b4d8;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
 
 /* Mobile optimization */
 @media (max-width: 900px) {

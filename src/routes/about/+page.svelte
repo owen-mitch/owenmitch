@@ -26,24 +26,16 @@
             <div class="isometric-title">
                 <h2>About me</h2>
             </div>
-            <p>
-                I am a senior Computer Science major at Saint Joseph's University. I
-                am also a software engineer/undergraduate researcher at my school in
-                the Haub Innovation Center.
-            </p>
             <div class="about-grid">
-                <div class="about-card">
-                    <span class="about-icon">🎓</span>
+                <div class="skills-card isometric-card">
                     <h3>Education</h3>
-                    <p>Computer Science at Saint Joseph's University</p>
+                    <p>BS Computer Science at Saint Joseph's University</p>
                 </div>
-                <div class="about-card">
-                    <span class="about-icon">💻</span>
+                <div class="skills-card isometric-card">
                     <h3>Work</h3>
-                    <p>Software Engineer at Haub Innovation Center</p>
+                    <p>Software Engineer at SJU Haub Innovation Center</p>
                 </div>
-                <div class="about-card">
-                    <span class="about-icon">🚀</span>
+                <div class="skills-card isometric-card">
                     <h3>Passion</h3>
                     <p>Building performant and beautiful things</p>
                 </div>
@@ -78,24 +70,6 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1.5rem;
         margin-top: 2rem;
-    }
-
-    .about-card {
-        background-color: #f8f8f8;
-        padding: 1.5rem;
-        border: 1px solid #ddd;
-        text-align: center;
-        transition: transform 0.3s ease-out;
-    }
-
-    .about-card:hover {
-        transform: translateY(-5px);
-    }
-
-    .about-icon {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-        display: block;
     }
 
     h3 {
