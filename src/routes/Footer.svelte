@@ -31,7 +31,7 @@
         z-index: 1;
         box-sizing: border-box;
         height: 3.2em;
-        background-color: #43b4d8;
+        background-color: #A6BFFD;
     }
 
     .home-footer {
@@ -46,7 +46,7 @@
     }
     
     .home-footer p {
-        color: #43b4d8;
+        color: #A6BFFD;
     }
 
     .button-tray {

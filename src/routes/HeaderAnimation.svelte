@@ -5,24 +5,24 @@
     .blue-square {
         position: absolute;
         right: 0;
-        width: 5em; /* Adjusted width */
-        height: 5em; /* Adjusted height */
+        width: 5em;
+        height: 5em;
         background-color: #0a1e8d;
-        animation: moveSquare 5s forwards; /* Added 'forwards' */
+        animation: moveSquare 5s forwards;
         z-index: 1;
     }
-
+    
     .header-blocker {
         position: absolute;
         top: 0;
         left: 0;
         width: calc(100% - 5em);
         height: 5em;
-        background-color: #dffef0;
+        background-color: #53607f;
         z-index: 3;
         animation: moveSquare 5s forwards;
     }
-
+    
     @keyframes moveSquare {
         0% {
             transform: translateX(0);

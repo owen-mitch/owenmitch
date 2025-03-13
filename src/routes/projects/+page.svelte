@@ -141,7 +141,7 @@
 
 <style>
     .container {
-        background-color: #43b4d8;
+        background-color: #A6BFFD;
         position: relative;
         width: 100%;
         height: 100%;
@@ -156,6 +156,7 @@
         background-color: white;
         margin: 2em 0;
         padding: 0;
+        box-shadow: 6px 6px 0 #000;
     }
 
     .project-title {

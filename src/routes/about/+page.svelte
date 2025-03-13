@@ -33,7 +33,7 @@
                 </div>
                 <div class="skills-card isometric-card">
                     <h3>Work</h3>
-                    <p>Software Engineer at SJU Haub Innovation Center</p>
+                    <p>Undergraduate Researcher at SJU Haub Innovation Center</p>
                 </div>
                 <div class="skills-card isometric-card">
                     <h3>Passion</h3>
@@ -48,7 +48,7 @@
 
 <style>
     .container {
-        background-color: #43b4d8;
+        background-color: #A6BFFD;
         position: relative;
         width: 100%;
         height: 100%;

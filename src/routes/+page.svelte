@@ -12,7 +12,7 @@
 
   <div class="header">
     <h1>Owen Mitchell</h1>
-    <h2>Software Engineer, Computer Science Undergrad</h2>
+    <h2>Software Engineer, Undergraduate Researcher</h2>
   </div>
 
   <div class="main-blocker"></div>
@@ -25,7 +25,7 @@
     <a href="/projects">Projects</a>
     <a href="/contact">Contact</a>
   </div>
-  <Footer --text-color="#43B4D8"/>
+  <Footer --text-color="#A6BFFD"/>
 </div>
 
 <style>
@@ -35,7 +35,7 @@
   }
 
   .container {
-    background-color: #dffef0;
+    background-color: #53607f;
     position: relative;
     width: 100%;
     height: 100%;
@@ -55,7 +55,7 @@
   .header {
     position: relative;
     z-index: 2;
-    color: #43b4d8;
+    color: #A6BFFD;
     padding: 0 1em;
   }
 
@@ -153,6 +153,7 @@
     }
     50% {
       transform: translateX(-5em) translateY(5em);
+      opacity: 1;
     }
     100% {
       transform: translateX(-5em) translateY(5em);
@@ -166,6 +167,7 @@
     }
     25% {
       transform: translateX(calc(100vw - 5em));
+      opacity: 1;
     }
     100% {
       transform: translateX(calc(100vw - 5em));

@@ -51,7 +51,7 @@
 
 <style>
     .container {
-        background-color: #43b4d8;
+        background-color: #A6BFFD;
         position: relative;
         width: 100%;
         height: 100%;
@@ -89,7 +89,7 @@
         margin-left: 1rem;
         cursor: pointer;
         position: relative;
-        background-color: #43B4D8;
+        background-color: #A6BFFD;
         color: #000;
         border: 1px solid #000;
         border-radius: 4px;
@@ -112,7 +112,7 @@
         left: 50%;
         transform: translateX(-50%);
         background-color: #0a1e8d;
-        color: #43B4D8;
+        color: #A6BFFD;
         padding: 8px 16px;
         border-radius: 4px;
         font-size: 0.9rem;

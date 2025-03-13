@@ -128,7 +128,7 @@
 
 <style>
     .container {
-        background-color: #43b4d8;
+        background-color: #A6BFFD;
         position: relative;
         width: 100%;
         height: 100%;
@@ -150,6 +150,14 @@
         height: 2em;
     }
 
+    .skills-card h3 {
+        color: #0a1e8d;
+        margin-top: 0;
+        border-bottom: 2px solid #A6BFFD;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
     .skills-card ul {
         padding-left: 1.5rem;
         margin: 0;
@@ -157,6 +165,35 @@
 
     .skills-card li {
         margin-bottom: 0.5rem;
+    }
+
+    .languages-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;      
+    }
+
+    .language-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+
+    .language-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+    }
+
+    .language-name {
+        margin: 0;
+        color: #0a1e8d;
+        font-weight: 600;
     }
 
     .certification {

@@ -41,7 +41,7 @@
     }
 
     .nav-button {
-        background-color: #43B4D8;
+        background-color: #A6BFFD;
         color: #000;
         border: 1px solid #000;
         border-radius: 4px;
@@ -63,7 +63,7 @@
 
     .nav-button.active {
         background-color: #0a1e8d;
-        color: #43B4D8;
+        color: #A6BFFD;
         border-color: #000;
     }
 
