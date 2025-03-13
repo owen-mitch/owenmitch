@@ -150,23 +150,6 @@
         height: 2em;
     }
 
-    .skills-card h3 {
-        color: #0a1e8d;
-        margin-top: 0;
-        border-bottom: 2px solid #A6BFFD;
-        padding-bottom: 0.5rem;
-        margin-bottom: 1rem;
-    }
-
-    .skills-card ul {
-        padding-left: 1.5rem;
-        margin: 0;
-    }
-
-    .skills-card li {
-        margin-bottom: 0.5rem;
-    }
-
     .languages-grid {
         display: flex;
         flex-wrap: wrap;
