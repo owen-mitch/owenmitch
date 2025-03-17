@@ -12,6 +12,11 @@
     function copyToClipboard() {
         navigator.clipboard.writeText("mail@owenmit.ch");
 
+        // Hopefully people click the button!
+        if (typeof window !== 'undefined' && window.trackAction) {
+            window.trackAction('copy_email', 'contact', 'mail@owenmit.ch');
+        }
+
         // Allows the copy button animation to fully play out
         isPressed = true;
         copySuccess = true;

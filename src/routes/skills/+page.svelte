@@ -128,7 +128,7 @@
 
 <style>
     .container {
-        background-color: #A6BFFD;
+        background-color: #a6bffd;
         position: relative;
         width: 100%;
         height: 100%;
@@ -153,7 +153,7 @@
     .languages-grid {
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;      
+        justify-content: start;
     }
 
     .language-card {
@@ -205,5 +205,11 @@
     p {
         font-size: medium;
         line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+        .language-card {
+            padding: 0.4rem;
+        }
     }
 </style>

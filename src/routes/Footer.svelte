@@ -1,18 +1,24 @@
 <script>
     import { page } from '$app/stores';
     import "./isometric.css";
+
+    function handleSocialClick(platform, url) {
+        if (typeof window !== 'undefined' && window.trackLinkClick) {
+            window.trackLinkClick(platform, url);
+        }
+    }
 </script>
 
 <footer class:home-footer={$page.url.pathname === '/'}>
     <p>© 2025 Owen Mitchell</p>
     <div class="button-tray">
-        <a href="https://linkedin.com/in/owen-mitch" target="_blank">
+        <a href="https://linkedin.com/in/owen-mitch" target="_blank" on:click={() => handleSocialClick('LinkedIn', 'https://linkedin.com/in/owen-mitch')}>
             <img src="./linkedin.svg" alt="LinkedIn" />
         </a>
-        <a href="https://github.com/owen-mitch" target="_blank">
+        <a href="https://github.com/owen-mitch" target="_blank" on:click={() => handleSocialClick('GitHub', 'https://github.com/owen-mitch')}>
             <img src="./github.svg" alt="Github"/>
         </a>
-        <a href="mailto:mail@owenmit.ch" target="_blank">
+        <a href="mailto:mail@owenmit.ch" target="_blank" on:click={() => handleSocialClick('Email', 'mailto:mail@owenmit.ch')}>
             <img src="./email.svg" alt="Email"/>
         </a>
     </div>

@@ -50,29 +50,6 @@
   margin-bottom: 1.5em;
 }
 
-/* Mobile optimization */
-@media (max-width: 900px) {
-  .languages-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .languages-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .language-icon {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .language-name {
-    font-size: 1rem;
-  }
-}
-
 /* Pseudo-3D animation for elements */
 @keyframes float {
   0% {

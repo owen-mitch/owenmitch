@@ -1,15 +1,21 @@
 <script>
     import { page } from '$app/stores';
     import "./isometric.css";
+
+    function handleButtonClick(buttonName) {
+        if (typeof window !== 'undefined' && window.trackButtonClick) {
+            window.trackButtonClick(buttonName, 'navigation_tray');
+        }
+    }
 </script>
 
 <div class="button-tray-wrapper">
     <div class="button-tray">
-        <a href="/" class="nav-button" class:active={$page.url.pathname === '/'}>Home</a>
-        <a href="/about" class="nav-button" class:active={$page.url.pathname === '/about'}>About</a>
-        <a href="/skills" class="nav-button" class:active={$page.url.pathname === '/skills'}>Skills</a>
-        <a href="/projects" class="nav-button" class:active={$page.url.pathname === '/projects'}>Projects</a>
-        <a href="/contact" class="nav-button" class:active={$page.url.pathname === '/contact'}>Contact</a>
+        <a href="/" class="nav-button" class:active={$page.url.pathname === '/'} on:click={() => handleButtonClick('Home')}>Home</a>
+        <a href="/about" class="nav-button" class:active={$page.url.pathname === '/about'} on:click={() => handleButtonClick('About')}>About</a>
+        <a href="/skills" class="nav-button" class:active={$page.url.pathname === '/skills'} on:click={() => handleButtonClick('Skills')}>Skills</a>
+        <a href="/projects" class="nav-button" class:active={$page.url.pathname === '/projects'} on:click={() => handleButtonClick('Projects')}>Projects</a>
+        <a href="/contact" class="nav-button" class:active={$page.url.pathname === '/contact'} on:click={() => handleButtonClick('Contact')}>Contact</a>
     </div>
 </div>
 <div class="footer-helper"></div>
