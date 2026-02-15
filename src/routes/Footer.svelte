@@ -37,22 +37,22 @@
         z-index: 1;
         box-sizing: border-box;
         height: 3.2em;
-        background-color: #A6BFFD;
+        background-color: var(--color-primary-light);
     }
 
     .home-footer {
-        background-color: #0a1e8d;
+        background-color: var(--color-primary);
     }
 
     p {
-        color: black;
+        color: var(--color-text);
         margin: 0;
         font-size: 0.9rem;
         font-weight: 500;
     }
     
     .home-footer p {
-        color: #A6BFFD;
+        color: var(--color-primary-light);
     }
 
     .button-tray {

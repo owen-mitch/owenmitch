@@ -7,7 +7,7 @@
         right: 0;
         width: 5em;
         height: 5em;
-        background-color: #0a1e8d;
+        background-color: var(--color-primary);
         animation: moveSquare 5s forwards;
         z-index: 1;
     }
@@ -18,7 +18,7 @@
         left: 0;
         width: calc(100% - 5em);
         height: 5em;
-        background-color: #53607f;
+        background-color: var(--color-neutral);
         z-index: 3;
         animation: moveSquare 5s forwards;
     }

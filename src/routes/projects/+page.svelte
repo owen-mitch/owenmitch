@@ -141,7 +141,7 @@
 
 <style>
     .container {
-        background-color: #A6BFFD;
+        background-color: var(--color-primary-light);
         position: relative;
         width: 100%;
         height: 100%;
@@ -153,15 +153,15 @@
     }
 
     .project-card {
-        background-color: white;
+        background-color: var(--color-bg);
         margin: 2em 0;
         padding: 0;
-        box-shadow: 6px 6px 0 #000;
+        box-shadow: var(--iso-offset-md) var(--iso-offset-md) 0 var(--color-text);
     }
 
     .project-title {
-        background-color: #0a1e8d;
-        color: white;
+        background-color: var(--color-primary);
+        color: var(--color-bg);
         padding: 1rem 2rem;
         display: flex;
         justify-content: space-between;
@@ -201,12 +201,12 @@
     }
 
     .tech-tag {
-        background-color: #eef;
-        color: #0a1e8d;
+        background-color: var(--color-tech-tag-bg);
+        color: var(--color-primary);
         padding: 0.3rem 0.8rem;
         border-radius: 20px;
         font-size: 0.85rem;
-        border: 1px solid #0a1e8d;
+        border: 1px solid var(--color-primary);
     }
 
     ul {

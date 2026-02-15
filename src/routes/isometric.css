@@ -1,24 +1,23 @@
 /* Isometric Design System
    Based on a neobrutalist pseudo-isometric style with a two-tone blue palette
-   #0a1e8d - Dark blue
-   #A6BFFD - Light blue
+   Colors and offsets are defined as CSS custom properties in global.css
 */
 
 .isometric-container {
   position: relative;
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 4px;
-  transform: translate(-6px, -6px);
-  box-shadow: 6px 6px 0 #0a1e8d;
+  background-color: var(--color-bg);
+  border: var(--border-width) solid var(--color-text);
+  border-radius: var(--border-radius);
+  transform: translate(calc(-1 * var(--iso-offset-md)), calc(-1 * var(--iso-offset-md)));
+  box-shadow: var(--iso-offset-md) var(--iso-offset-md) 0 var(--color-primary);
 }
 
 .isometric-button {
   outline: 0;
-  background-color: white;
-  color: #000;
-  border: 2px solid black;
-  border-radius: 4px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border: var(--border-width) solid var(--color-text);
+  border-radius: var(--border-radius);
   cursor: pointer;
   display: inline-flex;
   font-size: 20px;
@@ -27,42 +26,42 @@
   overflow: hidden;
   padding: 12px 16px;
   text-decoration: none;
-  transition: all .14s ease-out;
+  transition: all var(--transition-speed) var(--transition-ease);
   white-space: nowrap;
-  transform: translate(-4px, -4px);
-  box-shadow: 4px 4px 0 #0a1e8d;
+  transform: translate(calc(-1 * var(--iso-offset-sm)), calc(-1 * var(--iso-offset-sm)));
+  box-shadow: var(--iso-offset-sm) var(--iso-offset-sm) 0 var(--color-primary);
 }
 
 .isometric-button:hover {
-  transform: translate(-6px, -6px);
-  box-shadow: 6px 6px 0 #0a1e8d;
+  transform: translate(calc(-1 * var(--iso-offset-md)), calc(-1 * var(--iso-offset-md)));
+  box-shadow: var(--iso-offset-md) var(--iso-offset-md) 0 var(--color-primary);
 }
 
 .isometric-title {
   position: relative;
   display: inline-block;
   padding: 5px 15px;
-  background-color: #A6BFFD;
-  border: 2px solid black;
-  border-radius: 4px;
-  transform: translate(-4px, -4px);
-  box-shadow: 4px 4px 0 #0a1e8d;
-  margin-bottom: 1.5em;
+  background-color: var(--color-primary-light);
+  border: var(--border-width) solid var(--color-text);
+  border-radius: var(--border-radius);
+  transform: translate(calc(-1 * var(--iso-offset-sm)), calc(-1 * var(--iso-offset-sm)));
+  box-shadow: var(--iso-offset-sm) var(--iso-offset-sm) 0 var(--color-primary);
+  margin-bottom: var(--space-lg);
 }
 
 /* Pseudo-3D animation for elements */
 @keyframes float {
   0% {
-    transform: translate(-6px, -6px);
-    box-shadow: 6px 6px 0 #0a1e8d;
+    transform: translate(calc(-1 * var(--iso-offset-md)), calc(-1 * var(--iso-offset-md)));
+    box-shadow: var(--iso-offset-md) var(--iso-offset-md) 0 var(--color-primary);
   }
   50% {
-    transform: translate(-8px, -8px);
-    box-shadow: 8px 8px 0 #0a1e8d;
+    transform: translate(calc(-1 * var(--iso-offset-lg)), calc(-1 * var(--iso-offset-lg)));
+    box-shadow: var(--iso-offset-lg) var(--iso-offset-lg) 0 var(--color-primary);
   }
   100% {
-    transform: translate(-6px, -6px);
-    box-shadow: 6px 6px 0 #0a1e8d;
+    transform: translate(calc(-1 * var(--iso-offset-md)), calc(-1 * var(--iso-offset-md)));
+    box-shadow: var(--iso-offset-md) var(--iso-offset-md) 0 var(--color-primary);
   }
 }
 
@@ -70,36 +69,36 @@
 .isometric-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
+  gap: var(--space-xl);
+  margin: var(--space-xl) 0;
 }
 
 .isometric-card {
   position: relative;
-  padding: 1.5rem;
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 4px;
-  transform: translate(-6px, -6px);
-  box-shadow: 6px 6px 0 #0a1e8d;
+  padding: var(--space-lg);
+  background-color: var(--color-bg);
+  border: var(--border-width) solid var(--color-text);
+  border-radius: var(--border-radius);
+  transform: translate(calc(-1 * var(--iso-offset-md)), calc(-1 * var(--iso-offset-md)));
+  box-shadow: var(--iso-offset-md) var(--iso-offset-md) 0 var(--color-primary);
 }
 
 /* keep these here, used in About and Skills */
 .skills-card h3 {
-  color: #0a1e8d;
+  color: var(--color-primary);
   margin-top: 0;
-  border-bottom: 2px solid #A6BFFD;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
+  border-bottom: var(--border-width) solid var(--color-primary-light);
+  padding-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
 }
 
 .skills-card ul {
-  padding-left: 1.5rem;
+  padding-left: var(--space-lg);
   margin: 0;
 }
 
 .skills-card li {
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-sm);
 }
 
 /* Email button with isometric effect */
@@ -107,31 +106,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 2rem;
-  background-color: white;
-  border: 2px solid black;
-  margin: 2rem auto;
+  padding: var(--space-md) var(--space-xl);
+  background-color: var(--color-bg);
+  border: var(--border-width) solid var(--color-text);
+  margin: var(--space-xl) auto;
   max-width: 400px;
-  transform: translate(-6px, -6px);
-  box-shadow: 6px 6px 0 #0a1e8d;
+  transform: translate(calc(-1 * var(--iso-offset-md)), calc(-1 * var(--iso-offset-md)));
+  box-shadow: var(--iso-offset-md) var(--iso-offset-md) 0 var(--color-primary);
 }
 
 /* Copy button animation */
 @keyframes isometric-press {
   0% {
-    transform: translate(-4px, -4px);
-    box-shadow: 4px 4px 0 #0a1e8d;
+    transform: translate(calc(-1 * var(--iso-offset-sm)), calc(-1 * var(--iso-offset-sm)));
+    box-shadow: var(--iso-offset-sm) var(--iso-offset-sm) 0 var(--color-primary);
   }
   50% {
     transform: translate(0px, 0px);
-    box-shadow: 0px 0px 0 #0a1e8d;
+    box-shadow: 0px 0px 0 var(--color-primary);
   }
   100% {
-    transform: translate(-4px, -4px);
-    box-shadow: 4px 4px 0 #0a1e8d;
+    transform: translate(calc(-1 * var(--iso-offset-sm)), calc(-1 * var(--iso-offset-sm)));
+    box-shadow: var(--iso-offset-sm) var(--iso-offset-sm) 0 var(--color-primary);
   }
 }
 
 .isometric-press {
-  animation: isometric-press 0.2s ease-out;
+  animation: isometric-press 0.2s var(--transition-ease);
 }

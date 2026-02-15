@@ -66,8 +66,4 @@
         height: 100%;
         /* overflow: hidden; */
     }
-
-    :root {
-        --text-color: #000;
-    }
 </style>

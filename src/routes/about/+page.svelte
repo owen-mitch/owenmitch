@@ -48,7 +48,7 @@
 
 <style>
     .container {
-        background-color: #A6BFFD;
+        background-color: var(--color-primary-light);
         position: relative;
         width: 100%;
         height: 100%;
@@ -60,7 +60,7 @@
     }
 
     .bio-container {
-        background-color: white;
+        background-color: var(--color-bg);
         padding: 2em;
         margin: 2em 0;
     }
@@ -74,7 +74,7 @@
 
     h3 {
         margin: 0.5rem 0;
-        color: #0a1e8d;
+        color: var(--color-primary);
     }
 
     p {

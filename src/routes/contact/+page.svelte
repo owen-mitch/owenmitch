@@ -56,7 +56,7 @@
 
 <style>
     .container {
-        background-color: #A6BFFD;
+        background-color: var(--color-primary-light);
         position: relative;
         width: 100%;
         height: 100%;
@@ -83,7 +83,7 @@
     .email-address {
         font-size: 2rem;
         font-weight: bold;
-        color: #0a1e8d;
+        color: var(--color-primary);
     }
 
     .copy-button {
@@ -94,16 +94,16 @@
         margin-left: 1rem;
         cursor: pointer;
         position: relative;
-        background-color: #A6BFFD;
-        color: #000;
-        border: 1px solid #000;
-        border-radius: 4px;
-        transition: all 0.14s ease-out;
+        background-color: var(--color-primary-light);
+        color: var(--color-text);
+        border: 1px solid var(--color-text);
+        border-radius: var(--border-radius);
+        transition: all var(--transition-speed) var(--transition-ease);
     }
 
     .copy-button:hover {
-        box-shadow: 4px 4px 0 #000;
-        transform: translate(-4px, -4px);
+        box-shadow: var(--iso-offset-sm) var(--iso-offset-sm) 0 var(--color-text);
+        transform: translate(calc(-1 * var(--iso-offset-sm)), calc(-1 * var(--iso-offset-sm)));
     }
 
     .copy-button img {
@@ -116,10 +116,10 @@
         top: -40px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: #0a1e8d;
-        color: #A6BFFD;
+        background-color: var(--color-primary);
+        color: var(--color-primary-light);
         padding: 8px 16px;
-        border-radius: 4px;
+        border-radius: var(--border-radius);
         font-size: 0.9rem;
         font-weight: 500;
     }

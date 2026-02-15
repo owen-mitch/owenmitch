@@ -128,7 +128,7 @@
 
 <style>
     .container {
-        background-color: #a6bffd;
+        background-color: var(--color-primary-light);
         position: relative;
         width: 100%;
         height: 100%;
@@ -140,7 +140,7 @@
     }
 
     .skills-section {
-        background-color: white;
+        background-color: var(--color-bg);
         padding: 2em;
         margin: 2em 0;
     }
@@ -175,7 +175,7 @@
 
     .language-name {
         margin: 0;
-        color: #0a1e8d;
+        color: var(--color-primary);
         font-weight: 600;
     }
 
@@ -187,14 +187,14 @@
     .cert-logo {
         font-size: 2rem;
         font-weight: bold;
-        background-color: #0077b5;
-        color: white;
+        background-color: var(--color-linkedin);
+        color: var(--color-bg);
         width: 50px;
         height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 4px;
+        border-radius: var(--border-radius);
         margin-right: 1rem;
     }
 

@@ -47,14 +47,14 @@
     }
 
     .nav-button {
-        background-color: #A6BFFD;
-        color: #000;
-        border: 1px solid #000;
-        border-radius: 4px;
+        background-color: var(--color-primary-light);
+        color: var(--color-text);
+        border: 1px solid var(--color-text);
+        border-radius: var(--border-radius);
         padding: 8px 16px;
         font-weight: 500;
         text-decoration: none;
-        transition: all 0.14s ease-out;
+        transition: all var(--transition-speed) var(--transition-ease);
         text-align: center;
         min-width: 60px;
         display: inline-flex;
@@ -63,14 +63,14 @@
     }
 
     .nav-button:hover {
-        box-shadow: 4px 4px 0 #000;
-        transform: translate(-4px, -4px);
+        box-shadow: var(--iso-offset-sm) var(--iso-offset-sm) 0 var(--color-text);
+        transform: translate(calc(-1 * var(--iso-offset-sm)), calc(-1 * var(--iso-offset-sm)));
     }
 
     .nav-button.active {
-        background-color: #0a1e8d;
-        color: #A6BFFD;
-        border-color: #000;
+        background-color: var(--color-primary);
+        color: var(--color-primary-light);
+        border-color: var(--color-text);
     }
 
     /* Responsive scaling for small screens */

@@ -25,7 +25,7 @@
     <a href="/projects">Projects</a>
     <a href="/contact">Contact</a>
   </div>
-  <Footer --text-color="#A6BFFD"/>
+  <Footer />
 </div>
 
 <style>
@@ -35,7 +35,7 @@
   }
 
   .container {
-    background-color: #53607f;
+    background-color: var(--color-neutral);
     position: relative;
     width: 100%;
     height: 100%;
@@ -47,7 +47,7 @@
     right: 0;
     width: 5em;
     height: 5em;
-    background-color: #0a1e8d;
+    background-color: var(--color-primary);
     animation: moveSquare 5s forwards;
     z-index: 1;
   }
@@ -55,7 +55,7 @@
   .header {
     position: relative;
     z-index: 2;
-    color: #A6BFFD;
+    color: var(--color-primary-light);
     padding: 0 1em;
   }
 
@@ -65,7 +65,7 @@
     left: 0;
     width: calc(100% - 5em);
     height: 5em;
-    background-color: white;
+    background-color: var(--color-bg);
     z-index: 3;
     animation: moveRectangle 5s forwards;
   }
@@ -76,7 +76,7 @@
     left: 0;
     width: 5em;
     height: 5em;
-    background-color: white;
+    background-color: var(--color-bg);
     z-index: 3;
     animation: moveSquareDown 5s forwards;
     animation-delay: 1.25s;
@@ -88,7 +88,7 @@
     left: 5em;
     width: calc(100% - 5em);
     height: 5em;
-    background-color: white;
+    background-color: var(--color-bg);
     z-index: 3;
     animation: moveSecondRectangle 5s forwards;
     animation-delay: 2.5s;
@@ -100,7 +100,7 @@
     left: 0;
     width: 100%;
     height: calc(100% - 10em);
-    background-color: white;
+    background-color: var(--color-bg);
     z-index: 3;
     animation: moveMainBlocker 5s forwards;
     animation-delay: 3.75s;
