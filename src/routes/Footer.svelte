@@ -36,7 +36,7 @@
         bottom: 0;
         z-index: 1;
         box-sizing: border-box;
-        height: 3.2em;
+        height: var(--footer-height);
         background-color: var(--color-primary-light);
     }
 
@@ -80,7 +80,6 @@
     @media (max-width: 600px) {
         footer {
             padding: 0.5em 1.2em;
-            height: 3em;
         }
         
         .button-tray {
@@ -110,7 +109,6 @@
     @media (max-width: 360px) {
         footer {
             padding: 0.4em 0.8em;
-            height: 2.8em;
         }
         
         .button-tray {

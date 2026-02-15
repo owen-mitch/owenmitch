@@ -59,8 +59,8 @@
         background-color: var(--color-primary-light);
         position: relative;
         width: 100%;
-        height: 100%;
-        overflow: scroll;
+        height: calc(100% - var(--footer-height));
+        overflow: auto;
     }
 
     .contact-content {
