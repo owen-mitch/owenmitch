@@ -5,6 +5,33 @@
     import { page } from "$app/stores";
     import Analytics from "../lib/analytics.svelte";
 
+    const siteUrl = 'https://owenmit.ch';
+
+    const seo = {
+        '/': {
+            title: 'Owen Mitchell',
+            description: 'Software engineer and undergraduate researcher. Interactive portfolio showcasing projects, skills, and experience.'
+        },
+        '/about': {
+            title: 'About | Owen Mitchell',
+            description: 'Learn about Owen Mitchell — BS Computer Science student at Saint Joseph\'s University and undergraduate researcher at the Haub Innovation Center.'
+        },
+        '/skills': {
+            title: 'Skills | Owen Mitchell',
+            description: 'Programming languages, frameworks, and tools — JavaScript, TypeScript, Python, React, Svelte, AWS, Docker, and more.'
+        },
+        '/projects': {
+            title: 'Projects | Owen Mitchell',
+            description: 'Featured projects including a personal website, AI writing tool, home server, and more.'
+        },
+        '/contact': {
+            title: 'Contact | Owen Mitchell',
+            description: 'Get in touch with Owen Mitchell.'
+        }
+    };
+
+    $: currentSeo = seo[$page.url.pathname] || seo['/'];
+
     // Track page navigation and view transitions
     onNavigate((navigation) => {
         if (!document.startViewTransition) return;
@@ -53,7 +80,15 @@
 </script>
 
 <svelte:head>
-    <title>Owen Mitchell</title>
+    <title>{currentSeo.title}</title>
+    <meta name="description" content={currentSeo.description} />
+    <meta property="og:title" content={currentSeo.title} />
+    <meta property="og:description" content={currentSeo.description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{siteUrl}{$page.url.pathname}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={currentSeo.title} />
+    <meta name="twitter:description" content={currentSeo.description} />
 </svelte:head>
 
 <Analytics />
