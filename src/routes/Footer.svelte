@@ -10,7 +10,7 @@
 </script>
 
 <footer class:home-footer={$page.url.pathname === '/'}>
-    <p>© 2025 Owen Mitchell</p>
+    <p>© 2026 Owen Mitchell</p>
     <div class="button-tray">
         <a href="https://linkedin.com/in/owen-mitch" target="_blank" on:click={() => handleSocialClick('LinkedIn', 'https://linkedin.com/in/owen-mitch')}>
             <img src="./linkedin.svg" alt="LinkedIn" />
