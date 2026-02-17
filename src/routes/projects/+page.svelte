@@ -1,12 +1,8 @@
-<script lang="ts">
-    import Footer from "../Footer.svelte";
-    import ButtonTray from "../ButtonTray.svelte";
-    import HeaderAnimation from "../HeaderAnimation.svelte";
+<script>
     import "../isometric.css";
 </script>
 
 <div class="container">
-    <HeaderAnimation title="Projects" />
     <div class="projects-content">
         <div class="project-card isometric-container">
             <div class="project-title">
@@ -36,7 +32,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="project-card isometric-container" style="animation-delay: 0.3s">
             <div class="project-title">
                 <h2>AI Writing Tool</h2>
@@ -70,7 +66,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="project-card isometric-container" style="animation-delay: 0.6s">
             <div class="project-title">
                 <h2>Home Server</h2>
@@ -100,7 +96,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="project-card isometric-container" style="animation-delay: 0.9s">
             <div class="project-title">
                 <h2>Building a PC</h2>
@@ -132,9 +128,6 @@
             </div>
         </div>
     </div>
-    <div class="additional-footer-helper"></div>
-    <ButtonTray />
-    <Footer />
 </div>
 
 <style>
@@ -144,6 +137,9 @@
         width: 100%;
         height: calc(100% - var(--footer-height));
         overflow: auto;
+        padding-top: var(--nav-height);
+        padding-bottom: 2em;
+        box-sizing: border-box;
     }
 
     .projects-content {
@@ -216,8 +212,10 @@
         margin-bottom: 0.5rem;
     }
 
-    .additional-footer-helper {
-        width: 100%;
-        height: 2em;
+    @media (max-width: 768px) {
+        .container {
+            padding-top: 0;
+            padding-bottom: 5em;
+        }
     }
 </style>

@@ -1,12 +1,8 @@
 <script>
-    import Footer from "../Footer.svelte";
-    import ButtonTray from "../ButtonTray.svelte";
-    import HeaderAnimation from "../HeaderAnimation.svelte";
     import "../isometric.css";
 </script>
 
 <div class="container">
-    <HeaderAnimation title="About" />
     <div class="about-content">
         <div class="bio-container isometric-container">
             <div class="isometric-title">
@@ -19,7 +15,7 @@
                 creative, visually appealing way.
             </p>
         </div>
-        
+
         <div class="bio-container isometric-container" style="animation-delay: 0.5s">
             <div class="isometric-title">
                 <h2>About me</h2>
@@ -40,8 +36,6 @@
             </div>
         </div>
     </div>
-    <ButtonTray />
-    <Footer />
 </div>
 
 <style>
@@ -51,6 +45,9 @@
         width: 100%;
         height: calc(100% - var(--footer-height));
         overflow: auto;
+        padding-top: var(--nav-height);
+        padding-bottom: 2em;
+        box-sizing: border-box;
     }
 
     .about-content {
@@ -78,5 +75,12 @@
     p {
         font-size: medium;
         line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding-top: 0;
+            padding-bottom: 5em;
+        }
     }
 </style>

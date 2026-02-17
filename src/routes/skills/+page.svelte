@@ -1,12 +1,8 @@
 <script>
-    import Footer from "../Footer.svelte";
-    import ButtonTray from "../ButtonTray.svelte";
-    import HeaderAnimation from "../HeaderAnimation.svelte";
     import "../isometric.css";
 </script>
 
 <div class="container">
-    <HeaderAnimation title="Skills" />
     <div class="skills-content">
         <div class="skills-section isometric-container">
             <div class="isometric-title">
@@ -119,9 +115,6 @@
             </div>
         </div>
     </div>
-    <div class="additional-footer-helper"></div>
-    <ButtonTray />
-    <Footer />
 </div>
 
 <style>
@@ -131,6 +124,9 @@
         width: 100%;
         height: calc(100% - var(--footer-height));
         overflow: auto;
+        padding-top: var(--nav-height);
+        padding-bottom: 2em;
+        box-sizing: border-box;
     }
 
     .skills-content {
@@ -141,11 +137,6 @@
         background-color: var(--color-bg);
         padding: 2em;
         margin: 2em 0;
-    }
-
-    .additional-footer-helper {
-        width: 100%;
-        height: 2em;
     }
 
     .languages-grid {
@@ -203,6 +194,13 @@
     p {
         font-size: medium;
         line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding-top: 0;
+            padding-bottom: 5em;
+        }
     }
 
     @media (max-width: 600px) {

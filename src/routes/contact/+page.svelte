@@ -1,7 +1,4 @@
 <script>
-    import Footer from "../Footer.svelte";
-    import ButtonTray from "../ButtonTray.svelte";
-    import HeaderAnimation from "../HeaderAnimation.svelte";
     import "../isometric.css";
     import { fade } from 'svelte/transition';
 
@@ -31,7 +28,6 @@
 </script>
 
 <div class="container">
-    <HeaderAnimation title="Contact" />
     <div class="contact-content">
             <div class="email-container isometric-email">
                 <div class="email-address">mail@owenmit.ch</div>
@@ -48,8 +44,6 @@
                 {/if}
             </div>
     </div>
-    <ButtonTray />
-    <Footer />
 </div>
 
 <style>
@@ -59,6 +53,8 @@
         width: 100%;
         height: calc(100% - var(--footer-height));
         overflow: auto;
+        padding-top: var(--nav-height);
+        box-sizing: border-box;
     }
 
     .contact-content {
@@ -108,7 +104,14 @@
         width: 20px;
         height: 20px;
     }
-    
+
+    @media (max-width: 768px) {
+        .container {
+            padding-top: 0;
+            padding-bottom: 5em;
+        }
+    }
+
     .copy-success {
         position: absolute;
         top: -40px;

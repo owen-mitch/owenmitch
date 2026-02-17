@@ -18,32 +18,27 @@
         <a href="/contact" class="nav-button" class:active={$page.url.pathname === '/contact'} on:click={() => handleButtonClick('Contact')}>Contact</a>
     </div>
 </div>
-<div class="footer-helper"></div>
 
 <style>
     .button-tray-wrapper {
         position: fixed;
-        bottom: 3.7em;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: var(--nav-height);
         display: flex;
+        align-items: center;
         justify-content: center;
-        z-index: 10;
+        z-index: 100;
+        background-color: var(--color-primary-light);
+        box-sizing: border-box;
     }
 
     .button-tray {
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 12px;
-        padding: 12px 24px;
-        border-radius: 16px;
-        max-width: 95%;
-        width: fit-content;
-        transition: all 0.3s ease;
-    }
-
-    .footer-helper {
-        width: 100%;
-        height: 3em;
     }
 
     .nav-button {
@@ -73,41 +68,40 @@
         border-color: var(--color-text);
     }
 
-    /* Responsive scaling for small screens */
     @media (max-width: 768px) {
-        .button-tray {
-            padding: 8px 12px;
-            gap: 8px;
-            max-width: 98%;
+        .button-tray-wrapper {
+            top: auto;
+            bottom: 3.7em;
+            height: auto;
+            background-color: transparent;
         }
-        
+
+        .button-tray {
+            gap: 8px;
+        }
+
         .nav-button {
             padding: 6px 8px;
             font-size: 0.9rem;
             min-width: 50px;
         }
     }
-    
-    /* Even smaller screens */
+
     @media (max-width: 480px) {
         .button-tray-wrapper {
             bottom: 3.5em;
         }
-        
+
         .button-tray {
             flex-wrap: wrap;
             gap: 6px;
-            padding: 8px;
+            padding: 0 8px;
         }
-        
+
         .nav-button {
             padding: 5px 6px;
             font-size: 0.8rem;
             min-width: 40px;
-        }
-        
-        .footer-helper {
-            height: 2.8em;
         }
     }
 </style>
