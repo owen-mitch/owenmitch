@@ -1,39 +1,90 @@
-<div class="blue-square"></div>
-<div class="header-blocker"></div>
+<script>
+    export let title;
+    let headerWidth;
+</script>
+
+<div class="header-area" bind:clientWidth={headerWidth}>
+    <h1 class="title">{title}</h1>
+
+    <div class="cover"></div>
+
+    <div class="blue-square">
+        <div class="inverted-text" style="width: {headerWidth ? headerWidth + 'px' : '100vw'}">
+            <h1 aria-hidden="true">{title}</h1>
+        </div>
+    </div>
+</div>
 
 <style>
-    .blue-square {
-        position: absolute;
-        right: 0;
-        width: 5em;
-        height: 5em;
-        background-color: var(--color-primary);
-        animation: moveSquare 5s forwards;
-        z-index: 1;
+    .header-area {
+        position: relative;
+        display: flow-root;
     }
-    
-    .header-blocker {
+
+    h1 {
+        padding: 0 1em;
+        margin-bottom: 0;
+    }
+
+    .title {
+        position: relative;
+        z-index: 1;
+        transform: translateY(5px);
+        animation: textIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.9s forwards;
+    }
+
+    .cover {
         position: absolute;
         top: 0;
         left: 0;
         width: calc(100% - 5em);
         height: 5em;
-        background-color: var(--color-neutral);
-        z-index: 3;
-        animation: moveSquare 5s forwards;
+        background-color: var(--color-primary-light);
+        z-index: 2;
+        animation: slideOut 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
-    
-    @keyframes moveSquare {
-        0% {
-            transform: translateX(0);
+
+    .blue-square {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 5em;
+        height: 5em;
+        background-color: var(--color-primary);
+        z-index: 3;
+        overflow: hidden;
+        animation: slideOut 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    .inverted-text {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 5em;
+        animation: counterSlide 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    .inverted-text h1 {
+        color: var(--color-bg);
+        transform: translateY(5px);
+        animation: textIn 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.9s forwards;
+    }
+
+    @keyframes slideOut {
+        to {
+            transform: translateX(calc(-100vw - 5em));
         }
-        25% {
-            transform: translateX(-100vw);
-            opacity: 1;
+    }
+
+    @keyframes counterSlide {
+        to {
+            transform: translateX(calc(100vw + 5em));
         }
-        100% {
-            transform: translateX(-100vw);
-            opacity: 0;
+    }
+
+    @keyframes textIn {
+        to {
+            transform: translateY(0);
         }
     }
 </style>

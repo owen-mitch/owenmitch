@@ -32,21 +32,11 @@
 
     $: currentSeo = seo[$page.url.pathname] || seo['/'];
 
-    // Track page navigation and view transitions
+    // Track page navigation
     onNavigate((navigation) => {
-        if (!document.startViewTransition) return;
-
         if (typeof window !== 'undefined' && window.trackAction) {
-            // Track navigation with view transitions
             window.trackAction('view_transition', 'navigation', `${$page.url.pathname} → ${navigation.to.url.pathname}`);
         }
-
-        return new Promise((resolve) => {
-            document.startViewTransition(async () => {
-                resolve();
-                await navigation.complete;
-            });
-        });
     });
 
     onMount(() => {

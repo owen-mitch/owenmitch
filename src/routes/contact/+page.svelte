@@ -2,7 +2,6 @@
     import Footer from "../Footer.svelte";
     import ButtonTray from "../ButtonTray.svelte";
     import HeaderAnimation from "../HeaderAnimation.svelte";
-    import Header from "../Header.svelte";
     import "../isometric.css";
     import { fade } from 'svelte/transition';
 
@@ -32,8 +31,7 @@
 </script>
 
 <div class="container">
-    <HeaderAnimation />
-    <Header title="Contact" />
+    <HeaderAnimation title="Contact" />
     <div class="contact-content">
             <div class="email-container isometric-email">
                 <div class="email-address">mail@owenmit.ch</div>

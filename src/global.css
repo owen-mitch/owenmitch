@@ -57,11 +57,3 @@ body {
 h1, h2, h3 {
     font-weight: 700;
 }
-
-@media (prefers-reduced-motion) {
-	::view-transition-group(*),
-	::view-transition-old(*),
-	::view-transition-new(*) {
-		animation: none !important;
-	}
-}

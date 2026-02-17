@@ -2,13 +2,11 @@
     import Footer from "../Footer.svelte";
     import ButtonTray from "../ButtonTray.svelte";
     import HeaderAnimation from "../HeaderAnimation.svelte";
-    import Header from "../Header.svelte";
     import "../isometric.css";
 </script>
 
 <div class="container">
-    <HeaderAnimation />
-    <Header title="About" />
+    <HeaderAnimation title="About" />
     <div class="about-content">
         <div class="bio-container isometric-container">
             <div class="isometric-title">

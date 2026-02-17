@@ -2,13 +2,11 @@
     import Footer from "../Footer.svelte";
     import ButtonTray from "../ButtonTray.svelte";
     import HeaderAnimation from "../HeaderAnimation.svelte";
-    import Header from "../Header.svelte";
     import "../isometric.css";
 </script>
 
 <div class="container">
-    <HeaderAnimation />
-    <Header title="Projects" />
+    <HeaderAnimation title="Projects" />
     <div class="projects-content">
         <div class="project-card isometric-container">
             <div class="project-title">
