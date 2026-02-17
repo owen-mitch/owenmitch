@@ -12,7 +12,7 @@
 
   <div class="header">
     <h1>Owen Mitchell</h1>
-    <h2>Software Engineer, Undergraduate Researcher</h2>
+    <h2>R&D Software Engineer</h2>
   </div>
 
   <div class="main-blocker"></div>
