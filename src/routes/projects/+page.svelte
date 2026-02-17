@@ -24,10 +24,10 @@
                 </div>
                 <div class="project-showcase">
                     <div class="tech-stack">
-                        <span class="tech-tag">Svelte</span>
-                        <span class="tech-tag">SvelteKit</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">GitHub Pages</span>
+                        <span class="tech-tag isometric-inset">Svelte</span>
+                        <span class="tech-tag isometric-inset">SvelteKit</span>
+                        <span class="tech-tag isometric-inset">CSS</span>
+                        <span class="tech-tag isometric-inset">GitHub Pages</span>
                     </div>
                 </div>
             </div>
@@ -58,10 +58,10 @@
                 </div>
                 <div class="project-showcase">
                     <div class="tech-stack">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Next.js</span>
-                        <span class="tech-tag">OpenAI API</span>
-                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag isometric-inset">React</span>
+                        <span class="tech-tag isometric-inset">Next.js</span>
+                        <span class="tech-tag isometric-inset">OpenAI API</span>
+                        <span class="tech-tag isometric-inset">Firebase</span>
                     </div>
                 </div>
             </div>
@@ -88,10 +88,10 @@
                 </div>
                 <div class="project-showcase">
                     <div class="tech-stack">
-                        <span class="tech-tag">Ubuntu</span>
-                        <span class="tech-tag">Proxmox</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Nginx</span>
+                        <span class="tech-tag isometric-inset">Ubuntu</span>
+                        <span class="tech-tag isometric-inset">Proxmox</span>
+                        <span class="tech-tag isometric-inset">Docker</span>
+                        <span class="tech-tag isometric-inset">Nginx</span>
                     </div>
                 </div>
             </div>
@@ -120,9 +120,9 @@
                 </div>
                 <div class="project-showcase">
                     <div class="tech-stack">
-                        <span class="tech-tag">Hardware</span>
-                        <span class="tech-tag">PC Building</span>
-                        <span class="tech-tag">System Assembly</span>
+                        <span class="tech-tag isometric-inset">Hardware</span>
+                        <span class="tech-tag isometric-inset">PC Building</span>
+                        <span class="tech-tag isometric-inset">System Assembly</span>
                     </div>
                 </div>
             </div>
@@ -167,10 +167,13 @@
     }
 
     .project-date {
-        font-size: 0.9rem;
-        background-color: rgba(255, 255, 255, 0.2);
-        padding: 0.3rem 0.6rem;
-        border-radius: 4px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        padding: 0.3rem 0.8rem;
+        background-color: rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: var(--border-radius);
+        box-shadow: inset var(--iso-offset-sm) var(--iso-offset-sm) 0 rgba(0, 0, 0, 0.2);
     }
 
     .project-content {
@@ -195,12 +198,11 @@
     }
 
     .tech-tag {
-        background-color: var(--color-tech-tag-bg);
+        background-color: var(--color-primary-light);
         color: var(--color-primary);
         padding: 0.3rem 0.8rem;
-        border-radius: 20px;
         font-size: 0.85rem;
-        border: 1px solid var(--color-primary);
+        font-weight: 500;
     }
 
     ul {

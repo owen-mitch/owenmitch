@@ -134,3 +134,10 @@
 .isometric-press {
   animation: isometric-press 0.2s var(--transition-ease);
 }
+
+/* Negative isometric: pressed/inset into the surface */
+.isometric-inset {
+  border: 1px solid var(--color-text);
+  border-radius: var(--border-radius);
+  box-shadow: inset var(--iso-offset-sm) var(--iso-offset-sm) 0 var(--color-primary);
+}

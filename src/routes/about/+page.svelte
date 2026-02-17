@@ -23,15 +23,15 @@
             <div class="about-grid">
                 <div class="skills-card isometric-card">
                     <h3>Education</h3>
-                    <p>BS Computer Science at Saint Joseph's University</p>
+                    <p>B.S. Computer Science — Saint Joseph's University</p>
                 </div>
                 <div class="skills-card isometric-card">
                     <h3>Work</h3>
-                    <p>Undergraduate Researcher at SJU Haub Innovation Center</p>
+                    <p>R&D Engineer — Feith Systems and Software, Inc.</p>
                 </div>
                 <div class="skills-card isometric-card">
                     <h3>Passion</h3>
-                    <p>Building performant and beautiful things</p>
+                    <p>Building useful and beautiful things</p>
                 </div>
             </div>
         </div>
